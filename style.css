@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* HEADER */
+  header {
+    background: #004080;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo-area img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+  
+  .school-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .school-info h1 {
+    font-size: 1.8em;
+    margin: 0;
+  }
+  
+  .school-info p {
+    font-size: 1em;
+    color: #ffdd57;
+    margin: 5px 0 0 0;
+  }
+  
+  /* NAVIGATION */
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* RESPONSIVE NAV */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #004080;
+      padding: 10px;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* GALERI */
+  .swiper {
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
